@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aevly — Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: #090714;
+            color: rgba(255, 248, 240, 0.85);
+            line-height: 1.7;
+            font-size: 15px;
+            letter-spacing: 0.3px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #FFD89C;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            text-align: center;
+            color: rgba(255, 248, 240, 0.45);
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 48px;
+        }
+        .lang-btn {
+            background: none;
+            border: 1px solid rgba(255, 216, 156, 0.2);
+            color: rgba(255, 248, 240, 0.5);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            padding: 6px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        .lang-btn.active {
+            border-color: #FFD89C;
+            color: #FFD89C;
+            background: rgba(255, 216, 156, 0.08);
+        }
+        .lang-btn:hover { border-color: rgba(255, 216, 156, 0.5); }
+        .section-title {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            font-size: 17px;
+            color: #FFD89C;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 216, 156, 0.15), transparent);
+            margin: 36px 0;
+        }
+        p { margin-bottom: 14px; }
+        a { color: #FFD89C; text-decoration: none; border-bottom: 1px solid rgba(255, 216, 156, 0.3); }
+        a:hover { border-bottom-color: #FFD89C; }
+        .effective-date {
+            text-align: center;
+            color: rgba(255, 248, 240, 0.35);
+            font-size: 12px;
+            margin-top: 48px;
+            letter-spacing: 1px;
+        }
+        .content { display: none; }
+        .content.active { display: block; }
+        .tab-nav {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .tab-btn {
+            background: none;
+            border: none;
+            color: rgba(255, 248, 240, 0.4);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        .tab-btn.active {
+            color: #FFD89C;
+            border-bottom-color: #FFD89C;
+        }
+        .tab-btn:hover { color: rgba(255, 248, 240, 0.7); }
+        ul { padding-left: 20px; margin-bottom: 14px; }
+        li { margin-bottom: 6px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Aevly</div>
+        <div class="subtitle">Cosmic Rhythm Tracker</div>
+
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('de')">Deutsch</button>
+            <button class="lang-btn" onclick="switchLang('en')">English</button>
+        </div>
+
+        <div class="tab-nav">
+            <button class="tab-btn active" onclick="switchTab('privacy')">
+                <span class="de">Datenschutz</span><span class="en" style="display:none">Privacy Policy</span>
+            </button>
+            <button class="tab-btn" onclick="switchTab('terms')">
+                <span class="de">Nutzungsbedingungen</span><span class="en" style="display:none">Terms of Service</span>
+            </button>
+            <button class="tab-btn" onclick="switchTab('impressum')">
+                <span class="de">Impressum</span><span class="en" style="display:none">Legal Notice</span>
+            </button>
+        </div>
+
+        <!-- ════════════════════════════════════════════ -->
+        <!-- PRIVACY POLICY — DEUTSCH -->
+        <!-- ════════════════════════════════════════════ -->
+        <div id="privacy-de" class="content active">
+
+            <div class="section-title">1. Verantwortlicher</div>
+            <p>Der Betreiber von Aevly (nachfolgend «wir») ist verantwortlich für die Bearbeitung von Personendaten im Zusammenhang mit der Nutzung der Aevly-App. Bei Fragen zum Datenschutz erreichen Sie uns unter: <a href="mailto:privacy@aevly.app">privacy@aevly.app</a></p>
+
+            <div class="section-title">2. Welche Daten wir verarbeiten</div>
+            <p><strong>Lokal auf Ihrem Gerät gespeichert (werden nie an unsere Server gesendet):</strong></p>
+            <ul>
+                <li>Vorname</li>
+                <li>Geburtsdatum</li>
+                <li>Geburtszeit und Geburtsort (optional, für Aszendent-Berechnung)</li>
+                <li>Spracheinstellung</li>
+                <li>Benachrichtigungszeit</li>
+                <li>Generierte Horoskop- und Teaser-Texte (Cache)</li>
+            </ul>
+            <p><strong>Zur Textgenerierung an Drittanbieter übermittelt:</strong></p>
+            <ul>
+                <li>Biorhythmus-Werte (berechnet aus Ihrem Geburtsdatum)</li>
+                <li>Sternzeichen und chinesisches Tierkreiszeichen</li>
+                <li>Vorname (für personalisierte Texte)</li>
+                <li>Gewählte Sprache</li>
+            </ul>
+            <p>Diese Daten werden ausschliesslich zur Generierung Ihres persönlichen Readings verwendet und nicht gespeichert.</p>
+
+            <div class="section-title">3. Zweck der Datenverarbeitung</div>
+            <p>Wir verarbeiten Ihre Daten ausschliesslich für folgende Zwecke:</p>
+            <ul>
+                <li>Erstellung personalisierter Horoskope und kosmischer Readings</li>
+                <li>Berechnung von Biorhythmus, Sternzeichen und Kompatibilität</li>
+                <li>Zustellung täglicher Push-Benachrichtigungen (sofern aktiviert)</li>
+                <li>Verwaltung Ihres Abonnements über Apple</li>
+            </ul>
+
+            <div class="section-title">4. Drittanbieter</div>
+            <p><strong>OpenAI (USA):</strong> Wir nutzen die OpenAI API zur Generierung personalisierter Texte. OpenAI erhält die unter Punkt 2 genannten Daten zur Textgenerierung. OpenAI speichert API-Anfragen nicht für Trainingszwecke. Die Datenübermittlung in die USA erfolgt auf Basis der von OpenAI implementierten Standardvertragsklauseln.</p>
+            <p><strong>Supabase (EU):</strong> Unsere Edge Functions laufen auf Supabase-Servern in der EU (Region eu-west-1). Supabase verarbeitet Ihre Daten nur zur Weiterleitung an OpenAI — es werden keine Personendaten bei Supabase gespeichert.</p>
+            <p><strong>Apple:</strong> Für Push-Benachrichtigungen und Abonnement-Verwaltung. Es gelten Apples Datenschutzrichtlinien.</p>
+
+            <div class="section-title">5. Keine Werbung, kein Tracking</div>
+            <p>Aevly enthält keine Werbung. Wir verwenden keine Analyse-Tools, keine Tracking-Cookies und keine Werbe-SDKs. Wir verkaufen Ihre Daten nicht an Dritte.</p>
+
+            <div class="section-title">6. KI-generierte Inhalte</div>
+            <p>Ihre täglichen Readings, Horoskope und Kompatibilitätsanalysen werden von künstlicher Intelligenz (OpenAI GPT-4o-mini) erstellt. Diese Inhalte dienen der Unterhaltung und Selbstreflexion. Sie ersetzen keine medizinische, psychologische oder professionelle Beratung.</p>
+
+            <div class="section-title">7. Datenspeicherung und Löschung</div>
+            <p>Alle persönlichen Daten werden lokal auf Ihrem Gerät gespeichert. Durch Deinstallation der App werden sämtliche Daten gelöscht. Es gibt kein Benutzerkonto — wir können Ihre Daten nicht einsehen, da sie nie unsere Server erreichen.</p>
+
+            <div class="section-title">8. Ihre Rechte</div>
+            <p>Gemäss dem Schweizer Datenschutzgesetz (nDSG) und der EU-Datenschutzgrundverordnung (DSGVO) haben Sie folgende Rechte:</p>
+            <ul>
+                <li>Recht auf Auskunft über Ihre gespeicherten Daten</li>
+                <li>Recht auf Berichtigung unrichtiger Daten</li>
+                <li>Recht auf Löschung (Deinstallation der App löscht alle lokalen Daten)</li>
+                <li>Recht auf Einschränkung der Verarbeitung</li>
+                <li>Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde</li>
+            </ul>
+            <p>Kontakt: <a href="mailto:privacy@aevly.app">privacy@aevly.app</a></p>
+
+            <div class="section-title">9. Minderjährige</div>
+            <p>Aevly richtet sich an Personen ab 16 Jahren. Wir erheben wissentlich keine Daten von Kindern unter 16 Jahren.</p>
+
+            <div class="section-title">10. Änderungen</div>
+            <p>Wir können diese Datenschutzerklärung jederzeit anpassen. Die aktuelle Version ist stets unter dieser Adresse abrufbar.</p>
+        </div>
+
+        <!-- ════════════════════════════════════════════ -->
+        <!-- PRIVACY POLICY — ENGLISH -->
+        <!-- ════════════════════════════════════════════ -->
+        <div id="privacy-en" class="content">
+
+            <div class="section-title">1. Data Controller</div>
+            <p>The operator of Aevly ("we") is responsible for the processing of personal data in connection with the use of the Aevly app. For privacy inquiries, contact us at: <a href="mailto:privacy@aevly.app">privacy@aevly.app</a></p>
+
+            <div class="section-title">2. Data We Process</div>
+            <p><strong>Stored locally on your device (never sent to our servers):</strong></p>
+            <ul>
+                <li>First name</li>
+                <li>Date of birth</li>
+                <li>Birth time and location (optional, for ascendant calculation)</li>
+                <li>Language preference</li>
+                <li>Notification time</li>
+                <li>Generated horoscope and teaser texts (cache)</li>
+            </ul>
+            <p><strong>Transmitted to third parties for text generation:</strong></p>
+            <ul>
+                <li>Biorhythm values (calculated from your date of birth)</li>
+                <li>Zodiac sign and Chinese zodiac</li>
+                <li>First name (for personalized texts)</li>
+                <li>Selected language</li>
+            </ul>
+            <p>This data is used exclusively for generating your personal reading and is not stored.</p>
+
+            <div class="section-title">3. Purpose of Data Processing</div>
+            <p>We process your data exclusively for the following purposes:</p>
+            <ul>
+                <li>Creating personalized horoscopes and cosmic readings</li>
+                <li>Calculating biorhythm, zodiac signs, and compatibility</li>
+                <li>Delivering daily push notifications (if enabled)</li>
+                <li>Managing your subscription through Apple</li>
+            </ul>
+
+            <div class="section-title">4. Third-Party Services</div>
+            <p><strong>OpenAI (USA):</strong> We use the OpenAI API to generate personalized texts. OpenAI receives the data listed in Section 2 for text generation. OpenAI does not store API requests for training purposes. Data transfer to the USA is based on standard contractual clauses implemented by OpenAI.</p>
+            <p><strong>Supabase (EU):</strong> Our edge functions run on Supabase servers in the EU (region eu-west-1). Supabase processes your data only for forwarding to OpenAI — no personal data is stored by Supabase.</p>
+            <p><strong>Apple:</strong> For push notifications and subscription management. Apple's privacy policy applies.</p>
+
+            <div class="section-title">5. No Advertising, No Tracking</div>
+            <p>Aevly contains no advertising. We do not use analytics tools, tracking cookies, or advertising SDKs. We do not sell your data to third parties.</p>
+
+            <div class="section-title">6. AI-Generated Content</div>
+            <p>Your daily readings, horoscopes, and compatibility analyses are created by artificial intelligence (OpenAI GPT-4o-mini). This content is intended for entertainment and self-reflection. It does not replace medical, psychological, or professional advice.</p>
+
+            <div class="section-title">7. Data Storage and Deletion</div>
+            <p>All personal data is stored locally on your device. Uninstalling the app deletes all data. There is no user account — we cannot access your data as it never reaches our servers.</p>
+
+            <div class="section-title">8. Your Rights</div>
+            <p>Under the Swiss Data Protection Act (nDSG) and the EU General Data Protection Regulation (GDPR), you have the following rights:</p>
+            <ul>
+                <li>Right to access your stored data</li>
+                <li>Right to rectification of inaccurate data</li>
+                <li>Right to erasure (uninstalling the app deletes all local data)</li>
+                <li>Right to restriction of processing</li>
+                <li>Right to lodge a complaint with the competent supervisory authority</li>
+            </ul>
+            <p>Contact: <a href="mailto:privacy@aevly.app">privacy@aevly.app</a></p>
+
+            <div class="section-title">9. Minors</div>
+            <p>Aevly is intended for persons aged 16 and above. We do not knowingly collect data from children under 16.</p>
+
+            <div class="section-title">10. Changes</div>
+            <p>We may update this privacy policy at any time. The current version is always available at this address.</p>
+        </div>
+
+        <!-- ════════════════════════════════════════════ -->
+        <!-- TERMS OF SERVICE — DEUTSCH -->
+        <!-- ════════════════════════════════════════════ -->
+        <div id="terms-de" class="content">
+
+            <div class="section-title">1. Geltungsbereich</div>
+            <p>Diese Nutzungsbedingungen gelten für die Nutzung der Aevly-App. Mit der Nutzung der App akzeptieren Sie diese Bedingungen.</p>
+
+            <div class="section-title">2. Leistungsbeschreibung</div>
+            <p>Aevly ist eine Lifestyle-App die personalisierte kosmische Readings basierend auf Geburtsdaten erstellt. Die App kombiniert westliche Astrologie, chinesisches Tierkreiszeichen, Biorhythmus-Berechnung und Mondphasen zu personalisierten Inhalten.</p>
+
+            <div class="section-title">3. KI-generierte Inhalte</div>
+            <p>Alle Readings, Horoskope und Kompatibilitätsanalysen werden von künstlicher Intelligenz generiert. Diese Inhalte sind ausschliesslich zur Unterhaltung und Selbstreflexion bestimmt. Sie stellen keine medizinische, psychologische, finanzielle oder sonstige professionelle Beratung dar. Entscheidungen, die Sie auf Basis dieser Inhalte treffen, liegen in Ihrer eigenen Verantwortung.</p>
+
+            <div class="section-title">4. Abonnement</div>
+            <p>Aevly bietet ein kostenpflichtiges Abonnement an. Die Abwicklung erfolgt über Apple (App Store). Es gelten die Abonnementbedingungen von Apple, insbesondere:</p>
+            <ul>
+                <li>Abonnements verlängern sich automatisch, sofern nicht mindestens 24 Stunden vor Ablauf der aktuellen Periode gekündigt wird</li>
+                <li>Die Kündigung erfolgt über die Abonnement-Einstellungen Ihres Apple-Accounts</li>
+                <li>Es gibt keine kostenlose Testphase</li>
+            </ul>
+
+            <div class="section-title">5. Verfügbarkeit</div>
+            <p>Wir bemühen uns, Aevly ununterbrochen verfügbar zu halten. Ein Anspruch auf ständige Verfügbarkeit besteht nicht. Insbesondere die AI-generierten Inhalte hängen von Drittanbieter-Diensten ab, die vorübergehend nicht verfügbar sein können.</p>
+
+            <div class="section-title">6. Haftungsbeschränkung</div>
+            <p>Die Nutzung von Aevly erfolgt auf eigenes Risiko. Wir haften nicht für Schäden, die aus der Nutzung der App oder aus Entscheidungen entstehen, die auf Basis der KI-generierten Inhalte getroffen werden. Aevly ersetzt keine professionelle Beratung jeglicher Art.</p>
+
+            <div class="section-title">7. Geistiges Eigentum</div>
+            <p>Alle Inhalte der App (Design, Texte, Bilder, Icons) sind urheberrechtlich geschützt. Eine Vervielfältigung oder Verbreitung ohne Zustimmung ist untersagt. Die für Sie generierten Share Cards dürfen Sie frei auf sozialen Medien teilen.</p>
+
+            <div class="section-title">8. Anwendbares Recht</div>
+            <p>Es gilt Schweizer Recht. Gerichtsstand ist Zürich, Schweiz.</p>
+
+            <div class="section-title">9. Änderungen</div>
+            <p>Wir behalten uns vor, diese Nutzungsbedingungen jederzeit zu ändern. Die aktuelle Version ist stets unter dieser Adresse abrufbar.</p>
+        </div>
+
+        <!-- ════════════════════════════════════════════ -->
+        <!-- TERMS OF SERVICE — ENGLISH -->
+        <!-- ════════════════════════════════════════════ -->
+        <div id="terms-en" class="content">
+
+            <div class="section-title">1. Scope</div>
+            <p>These Terms of Service govern the use of the Aevly app. By using the app, you accept these terms.</p>
+
+            <div class="section-title">2. Service Description</div>
+            <p>Aevly is a lifestyle app that creates personalized cosmic readings based on birth data. The app combines Western astrology, Chinese zodiac, biorhythm calculation, and moon phases into personalized content.</p>
+
+            <div class="section-title">3. AI-Generated Content</div>
+            <p>All readings, horoscopes, and compatibility analyses are generated by artificial intelligence. This content is intended solely for entertainment and self-reflection. It does not constitute medical, psychological, financial, or any other professional advice. Decisions you make based on this content are your own responsibility.</p>
+
+            <div class="section-title">4. Subscription</div>
+            <p>Aevly offers a paid subscription. Billing is handled by Apple (App Store). Apple's subscription terms apply, in particular:</p>
+            <ul>
+                <li>Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period</li>
+                <li>Cancellation is done through your Apple Account subscription settings</li>
+                <li>There is no free trial</li>
+            </ul>
+
+            <div class="section-title">5. Availability</div>
+            <p>We strive to keep Aevly available at all times. There is no guarantee of uninterrupted availability. AI-generated content in particular depends on third-party services that may be temporarily unavailable.</p>
+
+            <div class="section-title">6. Limitation of Liability</div>
+            <p>Use of Aevly is at your own risk. We are not liable for damages arising from the use of the app or from decisions made based on AI-generated content. Aevly does not replace professional advice of any kind.</p>
+
+            <div class="section-title">7. Intellectual Property</div>
+            <p>All content in the app (design, texts, images, icons) is protected by copyright. Reproduction or distribution without consent is prohibited. You may freely share your generated Share Cards on social media.</p>
+
+            <div class="section-title">8. Governing Law</div>
+            <p>Swiss law applies. Place of jurisdiction is Zurich, Switzerland.</p>
+
+            <div class="section-title">9. Changes</div>
+            <p>We reserve the right to modify these Terms of Service at any time. The current version is always available at this address.</p>
+        </div>
+
+        <!-- ════════════════════════════════════════════ -->
+        <!-- IMPRESSUM — DEUTSCH -->
+        <!-- ════════════════════════════════════════════ -->
+        <div id="impressum-de" class="content">
+
+            <div class="section-title">Angaben gemäss Schweizer Recht</div>
+            <p>Der Betreiber von Aevly<br>Zürich, Schweiz</p>
+            <p>Kontakt: <a href="mailto:hello@aevly.app">hello@aevly.app</a></p>
+
+            <div class="divider"></div>
+
+            <p>Aevly ist eine Lifestyle-App zur Unterhaltung und Selbstreflexion. Die Inhalte werden von künstlicher Intelligenz generiert und stellen keine professionelle Beratung dar.</p>
+        </div>
+
+        <!-- ════════════════════════════════════════════ -->
+        <!-- IMPRESSUM — ENGLISH -->
+        <!-- ════════════════════════════════════════════ -->
+        <div id="impressum-en" class="content">
+
+            <div class="section-title">Legal Information</div>
+            <p>The operator of Aevly<br>Zurich, Switzerland</p>
+            <p>Contact: <a href="mailto:hello@aevly.app">hello@aevly.app</a></p>
+
+            <div class="divider"></div>
+
+            <p>Aevly is a lifestyle app for entertainment and self-reflection. Content is generated by artificial intelligence and does not constitute professional advice.</p>
+        </div>
+
+        <div class="effective-date" id="date-de">Gültig ab April 2026</div>
+        <div class="effective-date" id="date-en" style="display:none">Effective April 2026</div>
+    </div>
+
+    <script>
+        let currentLang = 'de';
+        let currentTab = 'privacy';
+
+        function switchLang(lang) {
+            currentLang = lang;
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector(`.lang-btn:nth-child(${lang === 'de' ? 1 : 2})`).classList.add('active');
+            document.querySelectorAll('.de').forEach(el => el.style.display = lang === 'de' ? '' : 'none');
+            document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+            document.getElementById('date-de').style.display = lang === 'de' ? '' : 'none';
+            document.getElementById('date-en').style.display = lang === 'en' ? '' : 'none';
+            showContent();
+        }
+
+        function switchTab(tab) {
+            currentTab = tab;
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            const tabs = document.querySelectorAll('.tab-btn');
+            if (tab === 'privacy') tabs[0].classList.add('active');
+            if (tab === 'terms') tabs[1].classList.add('active');
+            if (tab === 'impressum') tabs[2].classList.add('active');
+            showContent();
+        }
+
+        function showContent() {
+            document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+            const id = currentTab + '-' + currentLang;
+            const el = document.getElementById(id);
+            if (el) el.classList.add('active');
+        }
+
+        // URL hash support: #privacy, #terms, #impressum
+        const hash = window.location.hash.replace('#', '');
+        if (['privacy', 'terms', 'impressum'].includes(hash)) {
+            switchTab(hash);
+        }
+        // Auto-detect language
+        if (navigator.language && !navigator.language.startsWith('de')) {
+            switchLang('en');
+        }
+    </script>
+</body>
+</html>
